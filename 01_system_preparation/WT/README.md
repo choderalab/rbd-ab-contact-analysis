@@ -99,7 +99,7 @@ numNegative += numPairs
 
 The `numWaters` variable was determined by running the commands in the `7jx3_s309_tleap.in` script before adding ions. The above method gave `numPositive` was 224 and `numNegative` was 236.
 
-## Running tleap
+### Running tleap
 
 The `tleap` commands we ran are present in `7jx3_s309_tleap.in`.
 
