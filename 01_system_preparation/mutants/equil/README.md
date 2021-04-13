@@ -9,11 +9,11 @@ The RBD:S309 mutant (`7jx3_s309_mutant.inpcrd`, `7jx3_s309_mutant.prmtop`) syste
 * Use of hydrogen mass repartitioning (HMR). 
 * Timestep of 4 fs.
 
-Outputs are in `output/`
+Output directories are in zipped.
 
 Note: `.dcd` not included since it is large and unnecessary
 
-Since `tleap` merges all chains into one and renumbers residues starting from 1, `output/equilibrated.pdb` was renumbered using `correct_equilibrated_*.py` and
- saved as `output/equilibrated.pdb`. The original, non-renumbered structure was moved
-to `output/equilibrated_old.pdb`.
+Since `tleap` merges all chains into one and renumbers residues starting from 1, `*/equilibrated.pdb` was renumbered using `correct_equilibrated_*.py` and
+ saved as `*/equilibrated.pdb`. The original, non-renumbered structure was moved
+to `*/equilibrated_old.pdb`.
 
