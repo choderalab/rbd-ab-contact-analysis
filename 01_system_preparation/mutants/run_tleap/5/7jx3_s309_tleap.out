@@ -1,0 +1,575 @@
+-I: Adding /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/prep to search path.
+-I: Adding /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib to search path.
+-I: Adding /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm to search path.
+-I: Adding /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/cmd to search path.
+-s: Ignoring startup file: leaprc
+-f: Source 7jx3_s309_tleap.in.
+
+Welcome to LEaP!
+Sourcing: ./7jx3_s309_tleap.in
+----- Source: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/cmd/leaprc.GLYCAM_06j-1
+----- Source of /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/cmd/leaprc.GLYCAM_06j-1 done
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/GLYCAM_06j.dat
+Reading title:
+GLYCAM_06_H PARAMETERS (FOR AMBER 11.0, RESP 0.010), COPYRIGHT CCRC 2011
+Loading Prep file: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/prep/GLYCAM_06j-1.prep
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/GLYCAM_amino_06j_12SB.lib
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/GLYCAM_aminoct_06j_12SB.lib
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/GLYCAM_aminont_06j_12SB.lib
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/solvents.lib
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/atomic_ions.lib
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+----- Source: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/cmd/leaprc.protein.ff14SB
+----- Source of /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/cmd/leaprc.protein.ff14SB done
+Log file: ./leap.log
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/amino12.lib
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/aminoct12.lib
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/aminont12.lib
+Substituting map 0HYP -> HYP  for  0HYP -> NHYP
+Substituting map 1HYP -> CHYP  for  1HYP -> CHYP
+----- Source: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/cmd/leaprc.water.tip3p done
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/atomic_ions.lib
+Loading library: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/lib/solvents.lib
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Loading parameters: /home/zhangi/miniconda3/envs/ambertools20_new/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+Loading PDB file: ./7jx3_rbd_mutant_final.pdb
+  total atoms in file: 1713
+  Leap added 1647 missing atoms according to residue templates:
+       1647 H / lone pairs
+Loading PDB file: ../../PDBs/7jx3_s309_A_final.pdb
+  total atoms in file: 1734
+  Leap added 1711 missing atoms according to residue templates:
+       1711 H / lone pairs
+Loading PDB file: ../../PDBs/7jx3_s309_B_final.pdb
+  total atoms in file: 1648
+  Leap added 1630 missing atoms according to residue templates:
+       1630 H / lone pairs
+Scaling up box by a factor of 1.414580 to meet diagonal cut criterion
+  Solute vdw bounding box:              63.194 64.510 113.697
+  Total bounding box for atom centers:  175.938 175.938 175.938
+      (box expansion for 'iso' is  94.7%)
+  Solvent unit box:                     18.774 18.774 18.774
+  Volume: 2769709.432 A^3 (oct)
+  Total mass 1563323.148 amu,  Density 0.937 g/cc
+  Added 82749 residues.
+Total unperturbed charge:  12.000000
+Total perturbed charge:    12.000000
+Adding 460 counter ions to "complex". 82342 solvent molecules will remain.
+0: Placed Na+ in complex at (35.93, -28.95, 66.54).
+Placed Cl- in complex at (-40.02, 57.53, -14.35).
+0: Placed Na+ in complex at (-22.64, 53.33, -14.85).
+Placed Cl- in complex at (29.68, -8.39, 78.00).
+0: Placed Na+ in complex at (-5.64, -69.31, 44.47).
+Placed Cl- in complex at (-19.93, 20.35, 48.87).
+0: Placed Na+ in complex at (45.77, 26.45, 49.12).
+Placed Cl- in complex at (-2.53, -53.77, 14.50).
+0: Placed Na+ in complex at (-24.97, 70.75, 54.56).
+Placed Cl- in complex at (-11.87, -58.20, -31.48).
+0: Placed Na+ in complex at (-52.59, -49.78, 32.83).
+Placed Cl- in complex at (53.56, -2.08, -33.34).
+0: Placed Na+ in complex at (-16.08, 0.99, -45.98).
+Placed Cl- in complex at (14.33, 59.68, -47.76).
+0: Placed Na+ in complex at (58.61, -44.87, -10.70).
+Placed Cl- in complex at (-39.59, 57.92, -11.36).
+0: Placed Na+ in complex at (-12.87, -20.09, 40.42).
+Placed Cl- in complex at (34.23, -13.49, -63.86).
+0: Placed Na+ in complex at (44.50, -39.90, 63.22).
+Placed Cl- in complex at (-29.23, -67.71, -22.33).
+0: Placed Na+ in complex at (12.92, 38.66, -46.56).
+Placed Cl- in complex at (11.87, -31.33, 51.24).
+0: Placed Na+ in complex at (17.64, 6.67, -63.98).
+Placed Cl- in complex at (-19.14, 39.45, -37.77).
+0: Placed Na+ in complex at (35.79, 18.30, 56.83).
+Placed Cl- in complex at (2.21, 48.42, 49.84).
+0: Placed Na+ in complex at (-40.94, 64.78, -43.80).
+Placed Cl- in complex at (-43.13, -21.67, -39.45).
+0: Placed Na+ in complex at (37.19, 63.47, -0.63).
+Placed Cl- in complex at (67.58, 54.16, -20.58).
+0: Placed Na+ in complex at (49.92, -17.64, 5.74).
+Placed Cl- in complex at (-5.67, -81.84, 2.58).
+0: Placed Na+ in complex at (11.11, 68.49, -34.86).
+Placed Cl- in complex at (25.62, -60.58, -30.83).
+0: Placed Na+ in complex at (-17.15, -28.00, 57.77).
+Placed Cl- in complex at (-4.28, 43.68, -47.37).
+0: Placed Na+ in complex at (-57.05, 48.60, 45.70).
+Placed Cl- in complex at (58.30, -11.70, -41.37).
+0: Placed Na+ in complex at (-25.79, 59.85, -1.47).
+Placed Cl- in complex at (-54.71, 61.05, -13.27).
+0: Placed Na+ in complex at (-56.42, -11.07, -10.92).
+Placed Cl- in complex at (53.32, 18.86, 29.60).
+0: Placed Na+ in complex at (-39.94, -21.28, -26.39).
+Placed Cl- in complex at (-48.82, 60.12, 34.62).
+0: Placed Na+ in complex at (-35.86, -9.92, 45.30).
+Placed Cl- in complex at (70.21, 2.47, -37.25).
+0: Placed Na+ in complex at (49.13, -23.27, 23.14).
+Placed Cl- in complex at (-61.56, -3.08, 46.68).
+0: Placed Na+ in complex at (-40.63, 8.59, -4.20).
+Placed Cl- in complex at (-35.86, -27.16, 11.82).
+0: Placed Na+ in complex at (-23.90, 34.91, 15.63).
+Placed Cl- in complex at (-48.73, -43.26, 10.17).
+0: Placed Na+ in complex at (41.75, 17.81, -16.24).
+Placed Cl- in complex at (60.00, -41.89, 19.59).
+0: Placed Na+ in complex at (1.66, -4.71, -23.05).
+Placed Cl- in complex at (-10.42, 19.58, 43.38).
+0: Placed Na+ in complex at (14.89, -61.71, 38.41).
+Placed Cl- in complex at (23.39, 86.15, 2.52).
+0: Placed Na+ in complex at (-44.32, 45.66, -28.12).
+Placed Cl- in complex at (-47.06, -54.25, -22.27).
+0: Placed Na+ in complex at (-11.16, -18.30, 30.95).
+Placed Cl- in complex at (-35.47, 4.43, 56.38).
+0: Placed Na+ in complex at (6.69, 16.68, 37.31).
+Placed Cl- in complex at (17.98, -54.25, 30.83).
+0: Placed Na+ in complex at (-55.32, 14.44, 69.09).
+Placed Cl- in complex at (11.26, -64.73, -23.00).
+0: Placed Na+ in complex at (68.97, 21.35, 29.23).
+Placed Cl- in complex at (56.58, -22.13, 9.46).
+0: Placed Na+ in complex at (-67.28, -5.08, 36.13).
+Placed Cl- in complex at (-50.24, 44.65, -27.66).
+0: Placed Na+ in complex at (-19.54, -62.69, 40.24).
+Placed Cl- in complex at (8.83, 72.08, -44.51).
+0: Placed Na+ in complex at (5.44, -44.38, 36.67).
+Placed Cl- in complex at (-14.88, 6.67, 42.23).
+0: Placed Na+ in complex at (-27.78, 58.37, -37.77).
+Placed Cl- in complex at (68.97, -47.63, -10.60).
+0: Placed Na+ in complex at (18.48, -49.02, 46.71).
+Placed Cl- in complex at (45.77, -42.53, -43.80).
+0: Placed Na+ in complex at (18.88, 49.03, 46.10).
+Placed Cl- in complex at (-19.54, -16.70, -65.96).
+0: Placed Na+ in complex at (4.53, -54.12, -39.45).
+Placed Cl- in complex at (10.70, -49.76, 30.76).
+0: Placed Na+ in complex at (50.50, -47.44, 48.91).
+Placed Cl- in complex at (-32.29, 16.65, 80.03).
+0: Placed Na+ in complex at (-11.75, 59.58, -45.82).
+Placed Cl- in complex at (-12.59, 29.49, -15.79).
+0: Placed Na+ in complex at (37.28, 74.04, -17.87).
+Placed Cl- in complex at (37.64, -61.48, -25.39).
+0: Placed Na+ in complex at (20.72, 22.67, -67.95).
+Placed Cl- in complex at (45.56, -28.22, 23.29).
+0: Placed Na+ in complex at (-3.29, 9.43, 81.11).
+Placed Cl- in complex at (50.50, -54.25, -48.82).
+0: Placed Na+ in complex at (-23.20, -70.69, 7.73).
+Placed Cl- in complex at (22.16, 86.75, 6.13).
+0: Placed Na+ in complex at (30.17, 63.66, 33.39).
+Placed Cl- in complex at (37.91, -21.45, -38.77).
+0: Placed Na+ in complex at (70.62, 6.34, -24.57).
+Placed Cl- in complex at (18.35, 85.80, -1.27).
+0: Placed Na+ in complex at (75.09, 35.43, 20.39).
+Placed Cl- in complex at (-14.29, -57.83, -53.30).
+0: Placed Na+ in complex at (-4.15, -44.64, -15.79).
+Placed Cl- in complex at (-32.47, -26.54, 58.71).
+0: Placed Na+ in complex at (28.82, -9.12, 9.08).
+Placed Cl- in complex at (-51.19, 0.20, -44.86).
+0: Placed Na+ in complex at (-29.23, 47.26, 70.60).
+Placed Cl- in complex at (17.98, 60.72, -35.54).
+0: Placed Na+ in complex at (-41.63, -0.29, 5.32).
+Placed Cl- in complex at (-10.79, -62.83, -32.45).
+0: Placed Na+ in complex at (-4.25, 73.90, 47.38).
+Placed Cl- in complex at (51.96, 2.58, -56.80).
+0: Placed Na+ in complex at (7.14, 29.21, 48.91).
+Placed Cl- in complex at (-71.46, 24.11, 29.13).
+0: Placed Na+ in complex at (75.15, 41.32, 26.82).
+Placed Cl- in complex at (34.37, 19.17, -28.60).
+0: Placed Na+ in complex at (21.95, -54.15, 18.25).
+Placed Cl- in complex at (-3.87, 6.80, -78.41).
+0: Placed Na+ in complex at (-55.32, 37.44, -23.84).
+Placed Cl- in complex at (-48.11, -19.87, 8.54).
+0: Placed Na+ in complex at (-48.79, -67.94, -20.49).
+Placed Cl- in complex at (-74.90, -28.97, 23.70).
+0: Placed Na+ in complex at (12.83, 9.51, -46.11).
+Placed Cl- in complex at (-25.80, -43.90, -45.92).
+0: Placed Na+ in complex at (27.06, -39.52, -58.31).
+Placed Cl- in complex at (-65.23, -49.00, 36.38).
+0: Placed Na+ in complex at (6.80, -31.65, 2.40).
+Placed Cl- in complex at (26.35, -43.84, -27.18).
+0: Placed Na+ in complex at (62.08, -41.30, 13.25).
+Placed Cl- in complex at (-31.50, 49.32, 2.12).
+0: Placed Na+ in complex at (71.83, -21.57, 35.92).
+Placed Cl- in complex at (-19.83, 35.97, 62.39).
+0: Placed Na+ in complex at (7.28, 11.12, 16.34).
+Placed Cl- in complex at (-3.82, 69.26, -31.81).
+0: Placed Na+ in complex at (-36.48, 1.01, -8.54).
+Placed Cl- in complex at (-22.19, 15.06, 39.83).
+0: Placed Na+ in complex at (53.47, 30.91, -44.47).
+Placed Cl- in complex at (58.62, 41.22, -26.80).
+0: Placed Na+ in complex at (12.81, 78.81, 6.60).
+Placed Cl- in complex at (31.49, 72.10, 8.35).
+0: Placed Na+ in complex at (2.17, 80.79, 24.93).
+Placed Cl- in complex at (-29.23, 24.27, -48.88).
+0: Placed Na+ in complex at (-36.39, 29.80, -38.58).
+Placed Cl- in complex at (-73.46, -20.06, -12.08).
+0: Placed Na+ in complex at (-64.01, -46.66, 24.68).
+Placed Cl- in complex at (-7.83, -76.44, 8.25).
+0: Placed Na+ in complex at (-34.04, 5.96, 60.83).
+Placed Cl- in complex at (-25.80, 2.09, -19.37).
+0: Placed Na+ in complex at (-6.88, -9.01, -67.49).
+Placed Cl- in complex at (27.84, -64.04, 55.51).
+0: Placed Na+ in complex at (49.71, 43.14, 0.67).
+Placed Cl- in complex at (-60.28, -17.93, -17.87).
+0: Placed Na+ in complex at (56.40, 10.10, -16.54).
+Placed Cl- in complex at (-29.14, 69.43, 38.76).
+0: Placed Na+ in complex at (-0.72, -45.74, -17.92).
+Placed Cl- in complex at (-25.74, 22.92, 69.80).
+0: Placed Na+ in complex at (41.89, -9.47, 36.51).
+Placed Cl- in complex at (19.93, -39.49, 77.14).
+0: Placed Na+ in complex at (25.64, -32.00, 51.99).
+Placed Cl- in complex at (37.93, -37.28, -20.49).
+0: Placed Na+ in complex at (-3.96, -67.97, 31.28).
+Placed Cl- in complex at (26.85, 33.13, 42.41).
+0: Placed Na+ in complex at (-38.61, -71.93, 28.61).
+Placed Cl- in complex at (56.61, -43.06, 27.74).
+0: Placed Na+ in complex at (58.43, 16.27, -11.74).
+Placed Cl- in complex at (-17.91, 19.59, 55.02).
+0: Placed Na+ in complex at (-21.63, 13.82, 20.65).
+Placed Cl- in complex at (15.26, -43.09, 66.13).
+0: Placed Na+ in complex at (29.23, 78.41, -11.82).
+Placed Cl- in complex at (-39.87, 29.02, 58.45).
+0: Placed Na+ in complex at (74.60, 42.59, -34.15).
+Placed Cl- in complex at (-19.54, 52.28, 26.97).
+0: Placed Na+ in complex at (-48.03, 29.20, -30.95).
+Placed Cl- in complex at (51.67, 22.88, -12.05).
+0: Placed Na+ in complex at (-60.21, -11.42, 57.98).
+Placed Cl- in complex at (60.40, -10.47, 52.41).
+0: Placed Na+ in complex at (17.61, -30.73, 29.98).
+Placed Cl- in complex at (-3.82, 23.27, 47.84).
+0: Placed Na+ in complex at (-21.97, 2.10, -47.48).
+Placed Cl- in complex at (15.34, 20.45, 58.76).
+0: Placed Na+ in complex at (72.17, 17.32, -48.64).
+Placed Cl- in complex at (-21.73, -70.06, -22.89).
+0: Placed Na+ in complex at (-65.13, -2.36, 0.17).
+Placed Cl- in complex at (75.37, 16.37, 17.98).
+0: Placed Na+ in complex at (-28.16, 56.30, -41.96).
+Placed Cl- in complex at (-28.31, 61.67, -17.19).
+0: Placed Na+ in complex at (64.88, 7.66, 22.48).
+Placed Cl- in complex at (-46.89, -9.78, -56.68).
+0: Placed Na+ in complex at (-46.01, -58.31, 16.64).
+Placed Cl- in complex at (55.81, -34.45, -46.82).
+0: Placed Na+ in complex at (52.67, -32.37, -5.55).
+Placed Cl- in complex at (64.14, -52.16, 17.83).
+0: Placed Na+ in complex at (19.33, -20.65, -6.43).
+Placed Cl- in complex at (22.60, 0.07, -62.97).
+0: Placed Na+ in complex at (-48.11, -19.87, -18.02).
+Placed Cl- in complex at (17.00, 35.60, -63.97).
+0: Placed Na+ in complex at (-19.27, 10.59, 41.02).
+Placed Cl- in complex at (-48.42, 22.72, -29.96).
+0: Placed Na+ in complex at (-64.02, 3.33, 28.67).
+Placed Cl- in complex at (-28.42, -19.36, -54.64).
+0: Placed Na+ in complex at (-72.50, -14.88, 25.49).
+Placed Cl- in complex at (-47.48, 17.42, 7.18).
+0: Placed Na+ in complex at (-73.61, -43.43, 9.30).
+Placed Cl- in complex at (-56.55, -58.97, -19.71).
+0: Placed Na+ in complex at (65.75, 5.67, -54.43).
+Placed Cl- in complex at (-7.79, -26.40, 69.09).
+0: Placed Na+ in complex at (-70.48, -13.79, 54.16).
+Placed Cl- in complex at (-42.72, -20.69, -26.27).
+0: Placed Na+ in complex at (44.50, -4.18, -61.46).
+Placed Cl- in complex at (30.99, 74.94, -32.10).
+0: Placed Na+ in complex at (-30.31, 48.42, -3.26).
+Placed Cl- in complex at (53.69, 31.70, -35.12).
+0: Placed Na+ in complex at (-2.53, 0.71, -80.58).
+Placed Cl- in complex at (51.24, -56.63, -13.30).
+0: Placed Na+ in complex at (-14.95, -39.79, -41.30).
+Placed Cl- in complex at (39.66, -5.68, -8.82).
+0: Placed Na+ in complex at (-36.80, -25.30, -60.64).
+Placed Cl- in complex at (-40.02, -11.46, -54.18).
+0: Placed Na+ in complex at (-26.94, -39.65, 55.08).
+Placed Cl- in complex at (-14.18, 66.72, -7.80).
+0: Placed Na+ in complex at (25.44, -34.06, -64.46).
+Placed Cl- in complex at (-3.85, -24.13, 55.83).
+0: Placed Na+ in complex at (10.10, -17.18, 61.02).
+Placed Cl- in complex at (-42.34, -57.99, 2.12).
+0: Placed Na+ in complex at (-37.19, -70.44, -17.67).
+Placed Cl- in complex at (33.66, 72.46, -8.36).
+0: Placed Na+ in complex at (51.67, 56.26, -5.59).
+Placed Cl- in complex at (21.17, -14.29, 44.53).
+0: Placed Na+ in complex at (2.72, -22.07, -57.30).
+Placed Cl- in complex at (37.19, 17.48, 52.47).
+0: Placed Na+ in complex at (15.97, -14.65, 50.08).
+Placed Cl- in complex at (13.85, 0.20, -18.31).
+0: Placed Na+ in complex at (70.63, -24.39, 25.49).
+Placed Cl- in complex at (45.49, 6.29, 26.97).
+0: Placed Na+ in complex at (4.44, 49.18, -33.06).
+Placed Cl- in complex at (-8.70, 67.61, 26.97).
+0: Placed Na+ in complex at (3.94, 21.35, -50.43).
+Placed Cl- in complex at (-34.94, 45.94, -47.33).
+0: Placed Na+ in complex at (-8.99, 28.31, -3.98).
+Placed Cl- in complex at (5.77, -22.47, -20.32).
+0: Placed Na+ in complex at (26.81, -22.31, -16.30).
+Placed Cl- in complex at (-53.93, -0.49, 58.07).
+0: Placed Na+ in complex at (-35.18, -65.98, 29.91).
+Placed Cl- in complex at (-12.59, -16.50, -68.89).
+0: Placed Na+ in complex at (-68.91, 29.80, 14.52).
+Placed Cl- in complex at (41.69, -58.19, 35.85).
+0: Placed Na+ in complex at (3.32, -66.94, 0.53).
+Placed Cl- in complex at (-68.57, 28.54, 36.25).
+0: Placed Na+ in complex at (21.52, -27.02, -39.09).
+Placed Cl- in complex at (-28.10, -6.55, 2.58).
+0: Placed Na+ in complex at (69.72, -4.58, -54.76).
+Placed Cl- in complex at (38.12, -37.34, -59.26).
+0: Placed Na+ in complex at (-40.08, 2.97, 3.73).
+Placed Cl- in complex at (-46.64, 37.38, -33.51).
+0: Placed Na+ in complex at (7.02, -30.38, 61.12).
+Placed Cl- in complex at (51.84, 2.35, -19.71).
+0: Placed Na+ in complex at (-0.50, -44.95, -35.12).
+Placed Cl- in complex at (-3.29, -59.55, 14.73).
+0: Placed Na+ in complex at (15.38, 74.56, -18.53).
+Placed Cl- in complex at (-23.07, 30.66, 74.85).
+0: Placed Na+ in complex at (47.59, -45.04, -11.74).
+Placed Cl- in complex at (35.47, -24.46, 41.03).
+0: Placed Na+ in complex at (-1.61, -43.51, 63.42).
+Placed Cl- in complex at (13.10, -12.77, -43.80).
+0: Placed Na+ in complex at (5.52, -2.08, -80.56).
+Placed Cl- in complex at (-26.57, 8.36, -35.54).
+0: Placed Na+ in complex at (-34.42, -15.78, 53.03).
+Placed Cl- in complex at (-49.07, -14.65, -3.02).
+0: Placed Na+ in complex at (-60.35, -4.58, -54.76).
+Placed Cl- in complex at (20.80, -4.13, 42.88).
+0: Placed Na+ in complex at (-49.08, -23.16, 40.99).
+Placed Cl- in complex at (-18.78, -61.51, 29.21).
+0: Placed Na+ in complex at (41.75, -5.18, -29.51).
+Placed Cl- in complex at (19.16, 47.39, -13.21).
+0: Placed Na+ in complex at (-33.24, -65.98, -26.29).
+Placed Cl- in complex at (36.48, -39.67, 38.71).
+0: Placed Na+ in complex at (-29.98, 1.12, 2.06).
+Placed Cl- in complex at (-19.98, 50.83, -32.66).
+0: Placed Na+ in complex at (-27.08, -67.38, -29.71).
+Placed Cl- in complex at (9.96, 26.52, -36.77).
+0: Placed Na+ in complex at (-32.09, -34.07, 56.65).
+Placed Cl- in complex at (-17.58, -27.03, 38.28).
+0: Placed Na+ in complex at (40.88, 5.96, 2.49).
+Placed Cl- in complex at (-57.05, -43.38, -7.40).
+0: Placed Na+ in complex at (51.21, 22.09, -48.04).
+Placed Cl- in complex at (35.77, -60.17, 29.21).
+0: Placed Na+ in complex at (17.05, -25.80, 52.41).
+Placed Cl- in complex at (20.12, -6.33, 83.39).
+0: Placed Na+ in complex at (-44.91, 16.66, 43.56).
+Placed Cl- in complex at (34.37, 65.16, 24.50).
+0: Placed Na+ in complex at (-4.75, -27.53, 48.36).
+Placed Cl- in complex at (-21.73, -47.07, 43.49).
+0: Placed Na+ in complex at (5.34, 40.48, -33.15).
+Placed Cl- in complex at (55.59, -58.80, 15.54).
+0: Placed Na+ in complex at (18.88, 49.03, -33.55).
+Placed Cl- in complex at (-10.57, 53.22, 45.56).
+0: Placed Na+ in complex at (9.96, -19.46, 16.33).
+Placed Cl- in complex at (-10.11, 61.23, 52.20).
+0: Placed Na+ in complex at (-11.04, -41.33, -3.44).
+Placed Cl- in complex at (28.98, -13.86, -1.06).
+0: Placed Na+ in complex at (4.10, -65.35, 51.56).
+Placed Cl- in complex at (-46.65, -5.90, -51.65).
+0: Placed Na+ in complex at (64.03, 5.05, -42.89).
+Placed Cl- in complex at (72.18, 45.39, 17.56).
+0: Placed Na+ in complex at (-3.82, -45.71, -18.53).
+Placed Cl- in complex at (13.42, -75.26, 32.80).
+0: Placed Na+ in complex at (-56.62, -30.70, 32.32).
+Placed Cl- in complex at (58.95, 35.72, 21.96).
+0: Placed Na+ in complex at (46.18, 21.60, 30.32).
+Placed Cl- in complex at (-1.90, 7.22, -39.90).
+0: Placed Na+ in complex at (-37.95, -29.61, 19.34).
+Placed Cl- in complex at (-6.31, 56.31, 44.50).
+0: Placed Na+ in complex at (-29.40, 44.31, -43.48).
+Placed Cl- in complex at (-40.07, -14.06, -62.15).
+0: Placed Na+ in complex at (53.28, 36.58, -32.55).
+Placed Cl- in complex at (-47.47, -62.41, 12.19).
+0: Placed Na+ in complex at (39.29, -23.07, -36.40).
+Placed Cl- in complex at (1.93, 37.08, 58.65).
+0: Placed Na+ in complex at (-60.36, -5.52, 12.64).
+Placed Cl- in complex at (-37.59, 8.19, -20.32).
+0: Placed Na+ in complex at (-4.63, -56.46, -53.79).
+Placed Cl- in complex at (-70.68, -23.32, 44.47).
+0: Placed Na+ in complex at (63.43, 48.47, -16.24).
+Placed Cl- in complex at (1.90, 4.94, -16.63).
+0: Placed Na+ in complex at (9.37, -42.80, -26.56).
+Placed Cl- in complex at (23.84, 65.46, -28.18).
+0: Placed Na+ in complex at (13.37, -29.54, -24.49).
+Placed Cl- in complex at (-16.92, -25.60, -57.69).
+0: Placed Na+ in complex at (-19.51, 12.35, -72.39).
+Placed Cl- in complex at (-6.74, -57.69, 11.73).
+0: Placed Na+ in complex at (-3.70, -55.10, 35.63).
+Placed Cl- in complex at (17.64, -16.32, -50.70).
+0: Placed Na+ in complex at (1.72, 15.04, 58.42).
+Placed Cl- in complex at (-34.07, 9.00, -22.82).
+0: Placed Na+ in complex at (-52.35, -57.48, -28.60).
+Placed Cl- in complex at (-64.66, 39.65, 24.05).
+0: Placed Na+ in complex at (-62.08, -24.46, 14.48).
+Placed Cl- in complex at (-35.49, 12.94, 51.40).
+0: Placed Na+ in complex at (-47.39, -39.32, 42.23).
+Placed Cl- in complex at (-62.02, 53.86, 21.52).
+0: Placed Na+ in complex at (39.66, -51.66, -8.82).
+Placed Cl- in complex at (-32.71, -26.00, 23.11).
+0: Placed Na+ in complex at (69.00, 29.32, -1.11).
+Placed Cl- in complex at (6.73, 59.85, -1.47).
+0: Placed Na+ in complex at (-27.41, 56.24, 3.40).
+Placed Cl- in complex at (-8.99, -63.67, 49.12).
+0: Placed Na+ in complex at (32.01, -23.26, -79.65).
+Placed Cl- in complex at (-11.72, 36.78, -25.67).
+0: Placed Na+ in complex at (37.40, -61.35, -56.70).
+Placed Cl- in complex at (15.51, 9.81, 65.75).
+0: Placed Na+ in complex at (8.81, -12.42, -25.95).
+Placed Cl- in complex at (-29.04, 42.91, 73.23).
+0: Placed Na+ in complex at (-49.37, 26.91, 18.16).
+Placed Cl- in complex at (53.69, -60.28, 44.53).
+0: Placed Na+ in complex at (-68.73, 30.07, 44.11).
+Placed Cl- in complex at (-31.37, 26.48, 71.29).
+0: Placed Na+ in complex at (17.40, 28.35, 32.29).
+Placed Cl- in complex at (-25.74, -46.06, -23.13).
+0: Placed Na+ in complex at (-54.40, -39.77, -2.60).
+Placed Cl- in complex at (15.05, -37.97, 49.19).
+0: Placed Na+ in complex at (-53.48, -2.00, -67.71).
+Placed Cl- in complex at (-11.80, -69.31, -41.40).
+0: Placed Na+ in complex at (-70.70, 10.14, 2.58).
+Placed Cl- in complex at (41.82, -22.36, -10.47).
+0: Placed Na+ in complex at (-37.00, -56.50, -12.60).
+Placed Cl- in complex at (-45.89, 31.37, -54.03).
+0: Placed Na+ in complex at (-14.69, 6.53, 55.83).
+Placed Cl- in complex at (32.78, 68.55, 19.01).
+0: Placed Na+ in complex at (71.20, -48.71, 28.96).
+Placed Cl- in complex at (-4.04, -69.97, 15.68).
+0: Placed Na+ in complex at (-69.06, 29.42, 23.32).
+Placed Cl- in complex at (0.05, 65.43, -47.49).
+0: Placed Na+ in complex at (-4.07, 7.59, 16.70).
+Placed Cl- in complex at (-47.51, -36.97, -2.52).
+0: Placed Na+ in complex at (54.46, 37.83, -34.86).
+Placed Cl- in complex at (20.80, 13.79, 40.70).
+0: Placed Na+ in complex at (12.45, -26.79, -33.55).
+Placed Cl- in complex at (-18.56, 59.64, -43.48).
+0: Placed Na+ in complex at (48.70, -36.17, 46.50).
+Placed Cl- in complex at (8.18, -50.65, 3.36).
+0: Placed Na+ in complex at (9.94, 9.15, -61.83).
+Placed Cl- in complex at (-62.62, 57.11, 22.57).
+0: Placed Na+ in complex at (9.83, -48.60, -3.07).
+Placed Cl- in complex at (-47.84, 43.14, 27.22).
+0: Placed Na+ in complex at (-41.19, 50.67, -59.12).
+Placed Cl- in complex at (45.21, 11.51, 37.78).
+0: Placed Na+ in complex at (-14.16, -52.16, -1.27).
+Placed Cl- in complex at (-62.21, -16.73, 17.04).
+0: Placed Na+ in complex at (31.80, 46.24, -44.47).
+Placed Cl- in complex at (75.18, -6.42, 36.97).
+0: Placed Na+ in complex at (-14.37, -6.19, -40.89).
+Placed Cl- in complex at (-14.02, -37.01, -25.46).
+0: Placed Na+ in complex at (-35.49, 58.92, -1.70).
+Placed Cl- in complex at (-60.62, -58.42, 13.03).
+0: Placed Na+ in complex at (58.88, -42.90, -41.48).
+Placed Cl- in complex at (-33.63, 14.31, -76.27).
+0: Placed Na+ in complex at (73.35, -36.92, -26.48).
+Placed Cl- in complex at (54.15, -8.74, 3.66).
+0: Placed Na+ in complex at (-17.74, 16.07, 48.83).
+Placed Cl- in complex at (-49.08, -69.15, -12.12).
+0: Placed Na+ in complex at (-56.23, -35.42, 13.87).
+Placed Cl- in complex at (35.06, -14.82, -33.86).
+0: Placed Na+ in complex at (30.99, 51.94, -18.82).
+Placed Cl- in complex at (-19.54, 6.29, 80.07).
+0: Placed Na+ in complex at (-16.29, 62.86, 54.16).
+Placed Cl- in complex at (-36.22, 7.07, 57.38).
+0: Placed Na+ in complex at (-16.99, -12.24, -41.48).
+Placed Cl- in complex at (5.41, -60.27, 45.89).
+0: Placed Na+ in complex at (-54.48, -43.89, 32.17).
+Placed Cl- in complex at (-72.58, 14.10, -5.33).
+0: Placed Na+ in complex at (-61.70, 49.86, -27.63).
+Placed Cl- in complex at (-16.27, -44.94, 19.34).
+0: Placed Na+ in complex at (-49.52, -13.18, -27.18).
+Placed Cl- in complex at (33.00, -12.89, 19.41).
+0: Placed Na+ in complex at (29.67, 10.27, 58.98).
+Placed Cl- in complex at (10.15, -29.41, 76.79).
+0: Placed Na+ in complex at (12.69, 81.96, -17.26).
+Placed Cl- in complex at (21.17, 54.69, 31.25).
+0: Placed Na+ in complex at (-55.74, 46.62, 2.81).
+Placed Cl- in complex at (30.09, -69.02, -7.50).
+0: Placed Na+ in complex at (-72.97, -46.18, 2.66).
+Placed Cl- in complex at (-7.51, 34.53, -54.18).
+0: Placed Na+ in complex at (39.10, -25.74, -72.10).
+Placed Cl- in complex at (34.90, -6.80, 62.56).
+0: Placed Na+ in complex at (0.38, 39.65, 24.05).
+Placed Cl- in complex at (-29.62, 52.87, 17.73).
+0: Placed Na+ in complex at (-34.07, -13.99, -62.64).
+Placed Cl- in complex at (14.17, -49.78, 38.75).
+0: Placed Na+ in complex at (62.20, -8.39, -54.75).
+Placed Cl- in complex at (29.19, -13.84, -41.10).
+0: Placed Na+ in complex at (9.59, 49.24, -15.49).
+Placed Cl- in complex at (0.64, -51.35, 0.28).
+0: Placed Na+ in complex at (54.15, -8.74, -22.89).
+Placed Cl- in complex at (-56.42, -57.06, -37.47).
+0: Placed Na+ in complex at (35.05, 1.12, -24.49).
+Placed Cl- in complex at (-67.51, 36.62, -24.07).
+0: Placed Na+ in complex at (-60.94, -19.36, -54.64).
+Placed Cl- in complex at (-63.31, 38.03, 18.59).
+0: Placed Na+ in complex at (-7.83, 15.53, 61.35).
+Placed Cl- in complex at (59.33, 0.68, -3.02).
+0: Placed Na+ in complex at (17.86, -15.05, -18.53).
+Placed Cl- in complex at (-52.49, -67.14, 29.07).
+0: Placed Na+ in complex at (13.56, 16.25, -44.02).
+Placed Cl- in complex at (9.23, -51.17, -2.96).
+0: Placed Na+ in complex at (-9.58, -28.47, 27.35).
+Placed Cl- in complex at (-10.97, -57.42, 44.04).
+0: Placed Na+ in complex at (66.93, -18.05, 49.75).
+Placed Cl- in complex at (44.38, -54.33, 11.41).
+0: Placed Na+ in complex at (55.59, -12.82, 68.64).
+Placed Cl- in complex at (-3.70, 24.98, -61.92).
+Placed Cl- in complex at (-19.14, 23.50, -73.68).
+Placed Cl- in complex at (50.64, -19.54, 69.44).
+Placed Cl- in complex at (13.74, 76.45, 29.21).
+Placed Cl- in complex at (25.15, -18.41, -86.08).
+Placed Cl- in complex at (2.39, -29.80, -56.92).
+Placed Cl- in complex at (-58.31, -9.13, 11.81).
+Placed Cl- in complex at (-13.26, 53.61, 45.60).
+Placed Cl- in complex at (-33.03, 45.72, -39.82).
+Placed Cl- in complex at (10.70, 42.22, 57.31).
+Placed Cl- in complex at (14.78, -9.31, 82.33).
+Placed Cl- in complex at (-41.61, -10.31, 48.87).
+Placed Cl- in complex at (9.09, 60.15, 10.77).
+Writing pdb file: 7jx3_s309_mutant_out.pdb
+   printing CRYST1 record to PDB file with box info
+
+/home/zhangi/miniconda3/envs/ambertools20_new/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+/home/zhangi/miniconda3/envs/ambertools20_new/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NGLU -> GLU
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 2053 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	NGLN	1
+	NGLU	1
+	WAT	82342
+  )
+ (no restraints)
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 2; Notes = 0.

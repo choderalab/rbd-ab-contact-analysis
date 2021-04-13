@@ -1,0 +1,57 @@
+source leaprc.GLYCAM_06j-1 #  Source leaprc file for GLYCAM force field
+source leaprc.protein.ff14SB #  Source leaprc file for ff14SB protein force field
+source leaprc.water.tip3p #  Source leaprc file for TIP3P water model (and ions)
+
+######### RBD #########
+
+mol1 = loadpdb 7jx3_rbd_mutant_final.pdb #  Load PDB file fo RBD + glycan
+
+#  Add disulphide bridges
+
+bond mol1.336.SG mol1.361.SG
+bond mol1.379.SG mol1.432.SG
+bond mol1.391.SG mol1.525.SG
+bond mol1.480.SG mol1.488.SG
+
+#  N343 glycans
+
+bond mol1.343.ND2 mol1.531.C1 #  Bond N343 to GlcNAc
+bond mol1.531.O6 mol1.540.C1
+bond mol1.531.O4 mol1.532.C1
+bond mol1.532.O4 mol1.533.C1
+bond mol1.533.O6 mol1.534.C1
+bond mol1.534.O2 mol1.535.C1
+bond mol1.535.O4 mol1.536.C1
+bond mol1.533.O3 mol1.537.C1
+bond mol1.537.O2 mol1.538.C1
+bond mol1.538.O4 mol1.539.C1
+
+######### S309 #########
+mol2 = loadpdb ../../PDBs/7jx3_s309_A_final.pdb 
+mol3 = loadpdb ../../PDBs/7jx3_s309_B_final.pdb
+
+# Add disulphide bridges
+
+bond mol2.22.SG mol2.96.SG
+bond mol2.154.SG mol2.210.SG
+
+bond mol3.23.SG mol3.89.SG
+bond mol3.134.SG mol3.194.SG
+
+### Combine systems to make complex
+
+complex = combine {mol1 mol2 mol3}
+
+# Solvate the system and add ions
+
+solvateoct complex TIP3PBOX 22
+charge complex # Determine what the charge is
+addionsrand complex Na+ 224 Cl- 236
+
+# Save everything
+
+savepdb complex 7jx3_s309_mutant_out.pdb
+
+saveamberparm complex 7jx3_s309_mutant.prmtop 7jx3_s309_mutant.inpcrd #  Save AMBER topology and coordinate files
+
+quit #  Quit tleap program
