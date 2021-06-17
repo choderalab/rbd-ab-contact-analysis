@@ -17,4 +17,4 @@ Since `tleap` merges all chains into one and renumbers residues starting from 1,
  saved as `output/equilibrated.pdb`. The original, non-renumbered structure was moved
 to `output/equilibrated_old.pdb`.
 
-Writing PDB files with `OpenMM` in `correct_equilibrated_s309.py` doesn't retain glycan `CONECT` records. To retain these (useful for imaging after a production run) `correct_equilibrated_s309_mda.py` was used to create `output/equilibrated_for_imaging.pdb`. This file was used for imaging / analysing runs returned from Folding@Home trajectories.
+Writing PDB files with `OpenMM` in `correct_equilibrated_s309.py` doesn't retain glycan `CONECT` records. To retain these (useful for imaging after a production run) `correct_equilibrated_s309_mda.py` was used to create `output/X/equilibrated_for_imaging.pdb` (where `X` is a particular RUN number). This file was used for imaging / analysing runs returned from Folding@Home trajectories.

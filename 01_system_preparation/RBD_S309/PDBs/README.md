@@ -13,7 +13,7 @@ Next, we used  [ISOLDE](https://isolde.cimr.cam.ac.uk/) to build in the glycan, 
 2) adding missing bonds in the sugar and between the sugar and N343, 
 3) deleting the glycan stub in 7jx3.
 
-Finally, there were severe clashes introduced when building in the glycan, so we used [ISOLDE](https://isolde.cimr.cam.ac.uk/) to remove these clashes and refine non-ideal rotamers.
+Finally, there were severe clashes introduced when building in the glycan, so we used [ISOLDE](https://isolde.cimr.cam.ac.uk/) to remove these clashes and refine problematic rotamers.
 
 ### Detailed steps taken in ISOLDE
 

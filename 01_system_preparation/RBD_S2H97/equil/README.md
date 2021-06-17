@@ -15,7 +15,7 @@ Note: `.dcd` not included since it is large and unnecessary
 
 Since `tleap` merges all chains into one and renumbers residues starting from 1, `output/equilibrated.pdb` was renumbered using `correct_equilibrated_s309.py` and
  saved as `output/equilibrated.pdb`. The original, non-renumbered structure was moved
-to `output/equilibrated_old.pdb`.
+to `output/X/equilibrated_old.pdb` (where `X` is a particular RUN number).
 
 Writing PDB files with `OpenMM` in `correct_equilibrated_s309.py` doesn't retain glycan `CONECT` records.
 
