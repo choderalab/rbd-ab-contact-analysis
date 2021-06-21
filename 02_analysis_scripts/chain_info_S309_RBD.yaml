@@ -1,0 +1,7 @@
+antibody_chains:
+  chain_1: A
+  chain_2: B
+rbd_chain:
+  chain_1: R
+glycan_chain:
+  chain_1: X
