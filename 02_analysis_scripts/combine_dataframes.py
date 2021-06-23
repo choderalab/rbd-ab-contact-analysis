@@ -1,7 +1,7 @@
 import pickle
 import pandas as pd
 import argparse
-
+import os
 
 parser = argparse.ArgumentParser(
     description="Combine dataframes from two antibody chains after counting interactions."
@@ -31,15 +31,17 @@ args = parser.parse_args()
 def combine_dataframes(data_path, project_number, chain):
 
     chain_df_list = []
-    for i in range(0, 5):
 
-        try:
-            with open(f"{data_path}run{run_number}/PROJ{project_number}_count_interactions_angstroms_chain{str(chain)}_results.pkl", "rb") as f:
-                df = pickle.load(f)
+    file_name = f"{data_path}run{run_number}/PROJ{project_number}_count_interactions_angstroms_chain{str(chain)}_results.pkl"
 
-            chain_df_list.append(df)
-        else:
-            continue
+    try:
+        with open(file_name, "rb") as f:
+            df = pickle.load(f)
+
+        chain_df_list.append(df)
+    else:
+        print(f"Could not open {file_name}")
+        os.sys.exit()
 
     # get the attributes
     chain_attrs = chain_df_list[0].attrs
