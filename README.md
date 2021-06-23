@@ -10,7 +10,7 @@ Publication:
 ## Manifest
 
 * `01_system_preparation` - Contains all scripts and PDBs before and after structure preparation, system parameterization, and equilibration. Also contains the representative glycan structures added to RBD:S309 and RBD:S2H97
-* `02_analysis` - Contains the script used to analyze RBD:S309 and RBD:S2H97 contacts in the trajectories
+* `02_analysis_scripts` - Contains the script used to analyze RBD:S309 and RBD:S2H97 contacts in the trajectories
 
 ## Contributors
 
