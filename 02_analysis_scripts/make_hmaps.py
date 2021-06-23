@@ -9,8 +9,8 @@ import seaborn as sns
 
 parser = argparse.ArgumentParser(description="create heat maps from count data")
 parser.add_argument(
-    "-data_file",
-    dest="data_file",
+    "-data",
+    dest="data",
     nargs="+",
     help="the pickle file of interaction counts",
 )
@@ -269,7 +269,7 @@ def plot_collapsed_hmap(
 if __name__ == "__main__":
 
     # gather info
-    data_file = args.data_file
+    data = args.data
     save_path = args.save_path
     ab_name = args.ab_name
     cutoff = args.cutoff
@@ -277,7 +277,7 @@ if __name__ == "__main__":
     percent = args.percent
 
     # get system info from first loaded df, assume the same for both files if provided
-    with open(data_file[0], "rb") as d:
+    with open(data[0], "rb") as d:
             df_info = pickle.load(d)
 
     n_micros = int(np.round(df_info.attrs["microseconds"], 0))
@@ -285,10 +285,10 @@ if __name__ == "__main__":
     mutant = df_info.attrs["mutant"]
 
     # load the data, either one or two chains
-    if len(data_file) > 1:
-        with open(data_file[0], "rb") as data_0:
+    if len(data) > 1:
+        with open(data[0], "rb") as data_0:
             df0 = pickle.load(data_0)
-        with open(data_file[1], "rb") as data_1:
+        with open(data[1], "rb") as data_1:
             df1 = pickle.load(data_1)
 
         # combine dataframes (i.e. combine both chains)
@@ -298,7 +298,7 @@ if __name__ == "__main__":
 
     else:
 
-        with open(data_file[0], "rb") as data:
+        with open(data[0], "rb") as data:
             df = pickle.load(data)
 
         ab_chain_key = df.attrs["ab_chain_key"]
