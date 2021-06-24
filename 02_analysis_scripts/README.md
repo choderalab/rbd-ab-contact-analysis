@@ -28,9 +28,9 @@ glycan_chain:
   chain_1: X
 ```
 where `A`, `B`, `R`, and `X` are the names of the indicated chain in the PDB file.
-* The `-discard_time` flag specifies how much time to discard for a particular CLONE before starting contact analysis.
+* The `-discard_time` flag specifies how much time to discard (ns) for a particular CLONE before starting contact analysis.
 
-For this project there were a total of 5 RUNs, so the above script was ran on each RUN separately. Additioanlly a `-discard_time` of 100 ns was applied
+For this project there were a total of 5 RUNs, so the above script was ran on each RUN separately. Additionally, a `-discard_time` of 100 ns was applied
 
 ### Interaction count
 The `.pkl` files generated from `analyze_antibody_rbd_contacts.py` can then be used with the `count_ab_rbd_interactions.py` script. Since the Ab typically contains two chains, the antibody chain number needs to specified.
@@ -59,4 +59,4 @@ Running `count_ab_rbd_interactions.py` produces one `.pkl` file per antibody cha
 python make_hmaps.py -data count_chain1.pkl count_chain2.pkl -save_path path/to/save/plots -ab_name S2H97 -custom_residues_file s2h97_ab_custom_residues.yaml
 ```
 
-* The `-custom_residues_file` should point to a YAML file containing the system type (e.g. WT). See `s2h97_ab_custom_residues.yaml` for an example.
+* The `-custom_residues_file` should point to a YAML file containing the RBD residues for which to compute the % contribution to total interface close contacts. See `s2h97_ab_custom_residues.yaml` for an example.
