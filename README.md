@@ -1,7 +1,7 @@
 # rbd-ab-contact-analysis
 Code and workflow for running MD simulations on Folding@home to analyze RBD:Ab contacts
 
-Publication: 
+Publication: https://doi.org/10.1038/s41586-021-03807-6
 
 ## License
 * This software is licensed under the [MIT license](https://opensource.org/licenses/MIT) - a copy of this license is provided as `SOFTWARE_LICENSE`
