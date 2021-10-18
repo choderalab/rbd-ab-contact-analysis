@@ -1,0 +1,1017 @@
+log started: Mon Apr 26 11:45:52 2021
+
+Log file: ./leap.log
+>> #
+>> # ----- leaprc for loading the ff14SB force field
+>> # ----- NOTE: this is designed for PDB format 3!
+>> #
+>> #	load atom type hybridizations
+>> #
+>> addAtomTypes {
+>> 	{ "H"   "H" "sp3" }
+>> 	{ "HO"  "H" "sp3" }
+>> 	{ "HS"  "H" "sp3" }
+>> 	{ "H1"  "H" "sp3" }
+>> 	{ "H2"  "H" "sp3" }
+>> 	{ "H3"  "H" "sp3" }
+>> 	{ "H4"  "H" "sp3" }
+>> 	{ "H5"  "H" "sp3" }
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "HC"  "H" "sp3" }
+>> 	{ "HA"  "H" "sp3" }
+>> 	{ "HP"  "H" "sp3" }
+>> 	{ "HZ"  "H" "sp3" }
+>> 	{ "OH"  "O" "sp3" }
+>> 	{ "OS"  "O" "sp3" }
+>> 	{ "O"   "O" "sp2" }
+>> 	{ "O2"  "O" "sp2" }
+>> 	{ "OP"  "O" "sp2" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "CT"  "C" "sp3" }
+>> 	{ "CX"  "C" "sp3" }
+>> 	{ "C8"  "C" "sp3" }
+>> 	{ "2C"  "C" "sp3" }
+>> 	{ "3C"  "C" "sp3" }
+>> 	{ "CH"  "C" "sp3" }
+>> 	{ "CS"  "C" "sp2" }
+>> 	{ "C"   "C" "sp2" }
+>> 	{ "CO"   "C" "sp2" }
+>> 	{ "C*"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CB"  "C" "sp2" }
+>> 	{ "CC"  "C" "sp2" }
+>> 	{ "CN"  "C" "sp2" }
+>> 	{ "CM"  "C" "sp2" }
+>> 	{ "CK"  "C" "sp2" }
+>> 	{ "CQ"  "C" "sp2" }
+>> 	{ "CD"  "C" "sp2" }
+>> 	{ "C5"  "C" "sp2" }
+>> 	{ "C4"  "C" "sp2" }
+>> 	{ "CP"  "C" "sp2" }
+>> 	{ "CI"  "C" "sp3" }
+>> 	{ "CJ"  "C" "sp2" }
+>> 	{ "CW"  "C" "sp2" }
+>> 	{ "CV"  "C" "sp2" }
+>> 	{ "CR"  "C" "sp2" }
+>> 	{ "CA"  "C" "sp2" }
+>> 	{ "CY"  "C" "sp2" }
+>> 	{ "C0"  "Ca" "sp3" }
+>> 	{ "MG"  "Mg" "sp3" }
+>> 	{ "N"   "N" "sp2" }
+>> 	{ "NA"  "N" "sp2" }
+>> 	{ "N2"  "N" "sp2" }
+>> 	{ "N*"  "N" "sp2" }
+>> 	{ "NP"  "N" "sp2" }
+>> 	{ "NQ"  "N" "sp2" }
+>> 	{ "NB"  "N" "sp2" }
+>> 	{ "NC"  "N" "sp2" }
+>> 	{ "NT"  "N" "sp3" }
+>> 	{ "NY"  "N" "sp2" }
+>> 	{ "N3"  "N" "sp3" }
+>> 	{ "S"   "S" "sp3" }
+>> 	{ "SH"  "S" "sp3" }
+>> 	{ "P"   "P" "sp3" }
+>> 	{ "LP"  ""  "sp3" }
+>> 	{ "EP"  ""  "sp3" }
+>> 	{ "F"   "F" "sp3" }
+>> 	{ "Cl"  "Cl" "sp3" }
+>> 	{ "Br"  "Br" "sp3" }
+>> 	{ "I"   "I"  "sp3" }
+>> }
+>> #
+>> #	Load the main parameter set.
+>> #
+>> parm10 = loadamberparams parm10.dat
+Loading parameters: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+>> frcmod14SB = loadamberparams frcmod.ff14SB
+Loading parameters: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+>> #
+>> #	Load main chain and terminating amino acid libraries
+>> #
+>> loadOff amino12.lib
+Loading library: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/lib/amino12.lib
+Loading: ALA
+Loading: ARG
+Loading: ASH
+Loading: ASN
+Loading: ASP
+Loading: CYM
+Loading: CYS
+Loading: CYX
+Loading: GLH
+Loading: GLN
+Loading: GLU
+Loading: GLY
+Loading: HID
+Loading: HIE
+Loading: HIP
+Loading: HYP
+Loading: ILE
+Loading: LEU
+Loading: LYN
+Loading: LYS
+Loading: MET
+Loading: PHE
+Loading: PRO
+Loading: SER
+Loading: THR
+Loading: TRP
+Loading: TYR
+Loading: VAL
+>> loadOff aminoct12.lib
+Loading library: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/lib/aminoct12.lib
+Loading: CALA
+Loading: CARG
+Loading: CASN
+Loading: CASP
+Loading: CCYS
+Loading: CCYX
+Loading: CGLN
+Loading: CGLU
+Loading: CGLY
+Loading: CHID
+Loading: CHIE
+Loading: CHIP
+Loading: CHYP
+Loading: CILE
+Loading: CLEU
+Loading: CLYS
+Loading: CMET
+Loading: CPHE
+Loading: CPRO
+Loading: CSER
+Loading: CTHR
+Loading: CTRP
+Loading: CTYR
+Loading: CVAL
+Loading: NHE
+Loading: NME
+>> loadOff aminont12.lib
+Loading library: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/lib/aminont12.lib
+Loading: ACE
+Loading: NALA
+Loading: NARG
+Loading: NASN
+Loading: NASP
+Loading: NCYS
+Loading: NCYX
+Loading: NGLN
+Loading: NGLU
+Loading: NGLY
+Loading: NHID
+Loading: NHIE
+Loading: NHIP
+Loading: NILE
+Loading: NLEU
+Loading: NLYS
+Loading: NMET
+Loading: NPHE
+Loading: NPRO
+Loading: NSER
+Loading: NTHR
+Loading: NTRP
+Loading: NTYR
+Loading: NVAL
+>> 
+>> #
+>> #	Define the PDB name map for the amino acids
+>> #
+>> addPdbResMap {
+>>   { 0 "HYP" "HYP" } { 1 "HYP" "CHYP" }
+>>   { 0 "ALA" "NALA" } { 1 "ALA" "CALA" }
+>>   { 0 "ARG" "NARG" } { 1 "ARG" "CARG" }
+>>   { 0 "ASN" "NASN" } { 1 "ASN" "CASN" }
+>>   { 0 "ASP" "NASP" } { 1 "ASP" "CASP" }
+>>   { 0 "CYS" "NCYS" } { 1 "CYS" "CCYS" }
+>>   { 0 "CYX" "NCYX" } { 1 "CYX" "CCYX" }
+>>   { 0 "GLN" "NGLN" } { 1 "GLN" "CGLN" }
+>>   { 0 "GLU" "NGLU" } { 1 "GLU" "CGLU" }
+>>   { 0 "GLY" "NGLY" } { 1 "GLY" "CGLY" }
+>>   { 0 "HID" "NHID" } { 1 "HID" "CHID" }
+>>   { 0 "HIE" "NHIE" } { 1 "HIE" "CHIE" }
+>>   { 0 "HIP" "NHIP" } { 1 "HIP" "CHIP" }
+>>   { 0 "ILE" "NILE" } { 1 "ILE" "CILE" }
+>>   { 0 "LEU" "NLEU" } { 1 "LEU" "CLEU" }
+>>   { 0 "LYS" "NLYS" } { 1 "LYS" "CLYS" }
+>>   { 0 "MET" "NMET" } { 1 "MET" "CMET" }
+>>   { 0 "PHE" "NPHE" } { 1 "PHE" "CPHE" }
+>>   { 0 "PRO" "NPRO" } { 1 "PRO" "CPRO" }
+>>   { 0 "SER" "NSER" } { 1 "SER" "CSER" }
+>>   { 0 "THR" "NTHR" } { 1 "THR" "CTHR" }
+>>   { 0 "TRP" "NTRP" } { 1 "TRP" "CTRP" }
+>>   { 0 "TYR" "NTYR" } { 1 "TYR" "CTYR" }
+>>   { 0 "VAL" "NVAL" } { 1 "VAL" "CVAL" }
+>>   { 0 "HIS" "NHIS" } { 1 "HIS" "CHIS" }
+>> }
+Substituting map 0HYP -> HYP  for  0HYP -> NHYP
+Substituting map 1HYP -> CHYP  for  1HYP -> CHYP
+>> 
+>> #
+>> # assume that most often proteins use HIE
+>> #
+>> NHIS = NHIE
+>> HIS = HIE
+>> CHIS = CHIE
+> 
+> source leaprc.water.tip3p #  Source leaprc file for TIP3P water model (and ions)
+----- Source: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/cmd/leaprc.water.tip3p done
+>> #
+>> #       Load water and ions for TIP3P + Li/Merz monovalent ions 
+>> #       + Joung-Chetham monovalent ions
+>> #       + Li/Merz highly charged ions (+2 to +4, 12-6 normal usage set)
+>> #
+>> #       Note: the Li/Merz monovalent set is loaded only to get Tl+,
+>> #          Cu+, Ag+ NH4+, H3O+.  Since we load Joung-Cheatham second,
+>> #          the alkali halide parameters come from the Joung-Cheatham set
+>> #
+>> addAtomTypes {
+>> 	{ "HW"  "H" "sp3" }
+>> 	{ "OW"  "O" "sp3" }
+>> 	{ "F-"   "F" "sp3" }
+>> 	{ "Cl-"  "Cl" "sp3" }
+>> 	{ "Br-"  "Br" "sp3" }
+>> 	{ "I-"   "I"  "sp3" }
+>> 	{ "Li+"  "Li"  "sp3" }
+>> 	{ "Na+"  "Na"  "sp3" }
+>> 	{ "K+"  "K"  "sp3" }
+>> 	{ "Rb+"  "Rb"  "sp3" }
+>> 	{ "Cs+"  "Cs"  "sp3" }
+>> 	{ "Mg+"  "Mg"  "sp3" }
+>>     { "Tl+"  "Tl"  "sp3" }
+>>     { "Cu+"  "Cu"  "sp3" }
+>>     { "Ag+"  "Ag"  "sp3" }
+>>     { "NH4+"  "N"  "sp3" }
+>>     { "H3O+"  "O"  "sp3" }
+>>     { "Be2+" "Be"  "sp3" }
+>>     { "Cu2+" "Cu"  "sp3" }
+>>     { "Ni2+" "Ni"  "sp3" }
+>>     { "Pt2+" "Pt"  "sp3" }
+>>     { "Zn2+" "Zn"  "sp3" }
+>>     { "Co2+" "Co"  "sp3" }
+>>     { "Pd2+" "Pd"  "sp3" }
+>>     { "Ag2+" "Ag"  "sp3" }
+>>     { "Cr2+" "Cr"  "sp3" }
+>>     { "Fe2+" "Fe"  "sp3" }
+>>     { "Mg2+" "Mg"  "sp3" }
+>>     { "V2+"  "V"   "sp3" }
+>>     { "Mn2+" "Mn"  "sp3" }
+>>     { "Hg2+" "Hg"  "sp3" }
+>>     { "Cd2+" "Cd"  "sp3" }
+>>     { "Yb2+" "Yb"  "sp3" }
+>>     { "Ca2+" "Ca"  "sp3" }
+>>     { "Sn2+" "Sn"  "sp3" }
+>>     { "Pb2+" "Pb"  "sp3" }
+>>     { "Eu2+" "Eu"  "sp3" }
+>>     { "Sr2+" "Sr"  "sp3" }
+>>     { "Sm2+" "Sm"  "sp3" }
+>>     { "Ba2+" "Ba"  "sp3" }
+>>     { "Ra2+" "Ra"  "sp3" }
+>>     { "Al3+" "Al"  "sp3" }
+>>     { "Fe3+" "Fe"  "sp3" }
+>>     { "Cr3+" "Cr"  "sp3" }
+>>     { "In3+" "In"  "sp3" }
+>>     { "Tl3+" "Tl"  "sp3" }
+>>     { "Y3+"  "Y"   "sp3" }
+>>     { "La3+" "La"  "sp3" }
+>>     { "Ce3+" "Ce"  "sp3" }
+>>     { "Pr3+" "Pr"  "sp3" }
+>>     { "Nd3+" "Nd"  "sp3" }
+>>     { "Sm3+" "Sm"  "sp3" }
+>>     { "Eu3+" "Eu"  "sp3" }
+>>     { "Gd3+" "Gd"  "sp3" }
+>>     { "Tb3+" "Tb"  "sp3" }
+>>     { "Dy3+" "Dy"  "sp3" }
+>>     { "Er3+" "Er"  "sp3" }
+>>     { "Tm3+" "Tm"  "sp3" }
+>>     { "Lu3+" "Lu"  "sp3" }
+>>     { "Hf4+" "Hf"  "sp3" }
+>>     { "Zr4+" "Zr"  "sp3" }
+>>     { "Ce4+" "Ce"  "sp3" }
+>>     { "U4+"  "U"   "sp3" }
+>>     { "Pu4+" "Pu"  "sp3" }
+>>     { "Th4+" "Th"  "sp3" }
+>> }
+>> loadOff atomic_ions.lib
+Loading library: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/lib/atomic_ions.lib
+Loading: AG
+Loading: AL
+Loading: Ag
+Loading: BA
+Loading: BR
+Loading: Be
+Loading: CA
+Loading: CD
+Loading: CE
+Loading: CL
+Loading: CO
+Loading: CR
+Loading: CS
+Loading: CU
+Loading: CU1
+Loading: Ce
+Loading: Cl-
+Loading: Cr
+Loading: Dy
+Loading: EU
+Loading: EU3
+Loading: Er
+Loading: F
+Loading: FE
+Loading: FE2
+Loading: GD3
+Loading: H3O+
+Loading: HE+
+Loading: HG
+Loading: HZ+
+Loading: Hf
+Loading: IN
+Loading: IOD
+Loading: K
+Loading: K+
+Loading: LA
+Loading: LI
+Loading: LU
+Loading: MG
+Loading: MN
+Loading: NA
+Loading: NH4
+Loading: NI
+Loading: Na+
+Loading: Nd
+Loading: PB
+Loading: PD
+Loading: PR
+Loading: PT
+Loading: Pu
+Loading: RB
+Loading: Ra
+Loading: SM
+Loading: SR
+Loading: Sm
+Loading: Sn
+Loading: TB
+Loading: TL
+Loading: Th
+Loading: Tl
+Loading: Tm
+Loading: U4+
+Loading: V2+
+Loading: Y
+Loading: YB2
+Loading: ZN
+Loading: Zr
+>> loadOff solvents.lib
+Loading library: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/lib/solvents.lib
+Loading: CHCL3BOX
+Loading: DC4
+Loading: FB3
+Loading: FB3BOX
+Loading: FB4
+Loading: FB4BOX
+Loading: MEOHBOX
+Loading: NMABOX
+Loading: OP3
+Loading: OPC
+Loading: OPC3BOX
+Loading: OPCBOX
+Loading: PL3
+Loading: POL3BOX
+Loading: QSPCFWBOX
+Loading: SPC
+Loading: SPCBOX
+Loading: SPCFWBOX
+Loading: SPF
+Loading: SPG
+Loading: T4E
+Loading: TIP3PBOX
+Loading: TIP3PFBOX
+Loading: TIP4PBOX
+Loading: TIP4PEWBOX
+Loading: TIP5PBOX
+Loading: TP3
+Loading: TP4
+Loading: TP5
+Loading: TPF
+>> HOH = TP3
+>> WAT = TP3
+>> loadAmberParams frcmod.tip3p
+Loading parameters: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+>> loadAmberParams frcmod.ions1lm_126_tip3p
+Loading parameters: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+>> loadAmberParams frcmod.ionsjc_tip3p
+Loading parameters: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+>> loadAmberParams frcmod.ions234lm_126_tip3p
+Loading parameters: /home/zhangi/miniconda3/envs/perses-rbd-ace2/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+>> 
+> 
+> 
+> ######### RBD #########
+> 
+> mol1 = loadpdb ../PDBs/5_rbd_renumbered_final.pdb #  Load PDB file fo RBD + glycan
+Loading PDB file: ../PDBs/5_rbd_renumbered_final.pdb
+Matching PDB residue names to LEaP variables.
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+  total atoms in file: 1716
+  Leap added 1664 missing atoms according to residue templates:
+       1664 H / lone pairs
+> 
+> #  Add disulphide bridges
+> 
+> bond mol1.336.SG mol1.361.SG
+> bond mol1.379.SG mol1.432.SG
+> bond mol1.391.SG mol1.525.SG
+> bond mol1.480.SG mol1.488.SG
+> 
+> #  N343 glycans
+> 
+> bond mol1.343.ND2 mol1.530.C1 #  Bond N343 to GlcNAc
+> bond mol1.530.O6 mol1.539.C1
+> bond mol1.530.O4 mol1.531.C1
+> bond mol1.531.O4 mol1.532.C1
+> bond mol1.532.O6 mol1.536.C1
+> bond mol1.536.O2 mol1.537.C1
+> bond mol1.537.O4 mol1.538.C1
+> bond mol1.532.O3 mol1.533.C1
+> bond mol1.533.O2 mol1.534.C1
+> bond mol1.534.O4 mol1.535.C1
+> 
+> ######### S309 #########
+> mol2 = loadpdb ../PDBs/5_s2h97_renumbered_final.pdb 
+Loading PDB file: ../PDBs/5_s2h97_renumbered_final.pdb
+Matching PDB residue names to LEaP variables.
+Mapped residue GLN, term: Terminal/beginning, seq. number: 0 to: NGLN.
+Mapped residue SER, term: Terminal/beginning, seq. number: 225 to: NSER.
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+Starting new chain with TP3
+  total atoms in file: 3338
+  Leap added 3256 missing atoms according to residue templates:
+       3256 H / lone pairs
+> 
+> # Add disulphide bridges
+> 
+> bond mol2.22.SG mol2.96.SG
+> bond mol2.147.SG mol2.203.SG
+> 
+> bond mol2.246.SG mol2.314.SG
+> bond mol2.364.SG mol2.423.SG
+> bond mol2.223.SG mol2.441.SG
+> ### Combine systems to make complex
+> 
+> complex = combine {mol1 mol2}
+  Sequence: default_name
+  Sequence: default_name
+> 
+> # Solvate the system and add ions
+> 
+> solvateoct complex TIP3PBOX 22
+Scaling up box by a factor of 1.208848 to meet diagonal cut criterion
+  Solute vdw bounding box:              73.740 119.073 55.653
+  Total bounding box for atom centers:  172.262 172.262 172.262
+      (box expansion for 'iso' is 114.8%)
+  Solvent unit box:                     18.774 18.774 18.774
+The number of boxes:  x=10  y=10  z=10
+  Volume: 2600660.479 A^3 (oct)
+  Total mass 1467445.698 amu,  Density 0.937 g/cc
+  Added 77458 residues.
+> charge complex # Determine what the charge is
+Total unperturbed charge:  11.000000
+Total perturbed charge:    11.000000
+> addionsrand complex Na+ 210 Cl- 221 #  Randomly replace waters with ions, waters = 77458, totalCharge = 11, see README for how No. ions chosen
+Adding 431 counter ions to "complex". 77079 solvent molecules will remain.
+0: Placed Na+ in complex at (15.53, 79.77, 38.30).
+Placed Cl- in complex at (-36.55, 22.04, -37.30).
+0: Placed Na+ in complex at (34.93, 41.29, 41.15).
+Placed Cl- in complex at (-21.04, -81.96, -26.14).
+0: Placed Na+ in complex at (33.01, 10.15, 6.26).
+Placed Cl- in complex at (4.74, 35.42, -50.92).
+0: Placed Na+ in complex at (-5.71, 46.71, 23.66).
+Placed Cl- in complex at (13.85, 46.23, 8.37).
+0: Placed Na+ in complex at (7.99, 71.63, 6.00).
+Placed Cl- in complex at (-27.85, -6.69, 32.80).
+0: Placed Na+ in complex at (46.41, 50.29, 42.67).
+Placed Cl- in complex at (8.94, -46.39, 53.16).
+0: Placed Na+ in complex at (-33.30, -2.85, -45.86).
+Placed Cl- in complex at (46.68, -51.57, -25.89).
+0: Placed Na+ in complex at (41.66, 68.42, 24.81).
+Placed Cl- in complex at (-25.71, -54.60, 42.36).
+0: Placed Na+ in complex at (7.89, -72.17, -49.70).
+Placed Cl- in complex at (-19.75, -62.51, -7.59).
+0: Placed Na+ in complex at (20.56, -62.16, -10.43).
+Placed Cl- in complex at (-26.71, 65.46, -59.93).
+0: Placed Na+ in complex at (10.33, 15.10, -39.70).
+Placed Cl- in complex at (12.82, 2.22, 65.20).
+0: Placed Na+ in complex at (23.67, 1.89, -6.15).
+Placed Cl- in complex at (-50.82, 38.82, 12.34).
+0: Placed Na+ in complex at (-49.52, -13.14, 26.05).
+Placed Cl- in complex at (-38.18, -35.81, 2.71).
+0: Placed Na+ in complex at (30.82, 76.08, -15.02).
+Placed Cl- in complex at (-0.31, -2.93, -48.57).
+0: Placed Na+ in complex at (12.74, -48.67, 23.33).
+Placed Cl- in complex at (-27.41, 33.29, -62.85).
+0: Placed Na+ in complex at (2.17, -57.13, -54.60).
+Placed Cl- in complex at (46.31, 36.90, -11.94).
+0: Placed Na+ in complex at (-41.69, 3.00, 70.00).
+Placed Cl- in complex at (-50.92, -35.31, -35.97).
+0: Placed Na+ in complex at (8.94, -23.40, -39.77).
+Placed Cl- in complex at (-38.82, 20.95, -31.67).
+0: Placed Na+ in complex at (-56.31, -29.75, 1.93).
+Placed Cl- in complex at (6.80, 47.46, -56.88).
+0: Placed Na+ in complex at (-61.55, -47.58, 5.48).
+Placed Cl- in complex at (12.50, -12.33, 43.45).
+0: Placed Na+ in complex at (41.99, -20.80, -57.99).
+Placed Cl- in complex at (5.52, -25.03, -14.05).
+0: Placed Na+ in complex at (13.74, 7.51, 42.62).
+Placed Cl- in complex at (-0.20, 36.91, -2.47).
+0: Placed Na+ in complex at (37.93, -37.24, -20.36).
+Placed Cl- in complex at (-10.12, 36.37, 51.90).
+0: Placed Na+ in complex at (-32.29, 16.69, 0.51).
+Placed Cl- in complex at (-56.10, -0.41, -26.49).
+0: Placed Na+ in complex at (-19.14, 46.54, -7.18).
+Placed Cl- in complex at (50.50, 9.70, -35.24).
+0: Placed Na+ in complex at (35.90, -22.50, -40.76).
+Placed Cl- in complex at (-25.64, 16.38, 71.24).
+0: Placed Na+ in complex at (5.11, -35.70, 30.08).
+Placed Cl- in complex at (-44.72, 17.53, 8.39).
+0: Placed Na+ in complex at (9.23, -74.12, 37.00).
+Placed Cl- in complex at (-4.67, -41.00, 15.81).
+0: Placed Na+ in complex at (47.90, 5.62, 47.98).
+Placed Cl- in complex at (-23.20, -1.67, 47.68).
+0: Placed Na+ in complex at (-45.78, 53.65, 45.73).
+Placed Cl- in complex at (-14.95, 29.61, -14.23).
+0: Placed Na+ in complex at (-14.54, 55.68, 44.41).
+Placed Cl- in complex at (23.76, -14.95, -59.71).
+0: Placed Na+ in complex at (64.88, 11.35, -25.68).
+Placed Cl- in complex at (70.16, 53.53, 14.56).
+0: Placed Na+ in complex at (-6.90, 54.43, 35.68).
+Placed Cl- in complex at (-0.73, -32.47, 61.15).
+0: Placed Na+ in complex at (-4.15, 24.39, -28.94).
+Placed Cl- in complex at (-5.32, 51.61, -40.61).
+0: Placed Na+ in complex at (-72.92, -16.76, 27.89).
+Placed Cl- in complex at (-64.30, -15.38, -27.33).
+0: Placed Na+ in complex at (-27.11, -60.23, 19.47).
+Placed Cl- in complex at (33.16, -28.31, -12.87).
+0: Placed Na+ in complex at (-32.47, 42.48, 45.57).
+Placed Cl- in complex at (-20.86, -75.15, -15.53).
+0: Placed Na+ in complex at (67.42, -29.75, 22.86).
+Placed Cl- in complex at (-46.34, -23.86, -47.91).
+0: Placed Na+ in complex at (39.66, -51.62, -35.24).
+Placed Cl- in complex at (-20.66, 18.70, -50.86).
+0: Placed Na+ in complex at (17.57, -16.75, 51.76).
+Placed Cl- in complex at (-7.59, -75.46, -23.77).
+0: Placed Na+ in complex at (25.91, 62.30, 14.94).
+Placed Cl- in complex at (-65.58, -37.41, 34.86).
+0: Placed Na+ in complex at (-49.51, -58.19, -14.80).
+Placed Cl- in complex at (-25.72, 24.46, -70.15).
+0: Placed Na+ in complex at (-27.77, -10.57, 28.74).
+Placed Cl- in complex at (1.73, 15.08, -47.66).
+0: Placed Na+ in complex at (-46.70, 26.54, -1.33).
+Placed Cl- in complex at (14.32, -33.70, -6.30).
+0: Placed Na+ in complex at (-14.13, -28.85, -11.69).
+Placed Cl- in complex at (-18.39, 16.65, 70.73).
+0: Placed Na+ in complex at (0.22, -49.25, -36.97).
+Placed Cl- in complex at (21.73, -41.83, -20.81).
+0: Placed Na+ in complex at (-48.86, -36.12, 20.08).
+Placed Cl- in complex at (-31.37, 36.79, -16.31).
+0: Placed Na+ in complex at (-8.76, 54.03, -19.88).
+Placed Cl- in complex at (-39.40, -54.95, -14.26).
+0: Placed Na+ in complex at (-38.82, 43.94, 8.15).
+Placed Cl- in complex at (-31.70, 1.49, 64.13).
+0: Placed Na+ in complex at (-1.61, 48.51, 10.44).
+Placed Cl- in complex at (27.12, 32.30, -16.30).
+0: Placed Na+ in complex at (72.60, -0.90, -46.66).
+Placed Cl- in complex at (-47.40, 16.80, -56.88).
+0: Placed Na+ in complex at (53.05, 34.39, -1.49).
+Placed Cl- in complex at (55.81, 11.58, 6.41).
+0: Placed Na+ in complex at (54.68, 63.80, -7.01).
+Placed Cl- in complex at (11.05, 37.64, -36.97).
+0: Placed Na+ in complex at (12.54, -41.10, -5.98).
+Placed Cl- in complex at (3.01, -61.07, 34.93).
+0: Placed Na+ in complex at (-35.32, 64.40, -6.87).
+Placed Cl- in complex at (1.46, 51.08, 40.44).
+0: Placed Na+ in complex at (-15.91, 38.89, 32.91).
+Placed Cl- in complex at (-34.52, 33.80, 48.55).
+0: Placed Na+ in complex at (61.50, 9.18, -40.76).
+Placed Cl- in complex at (-12.54, -54.21, 51.36).
+0: Placed Na+ in complex at (41.80, 70.36, 30.42).
+Placed Cl- in complex at (7.39, 41.86, -13.34).
+0: Placed Na+ in complex at (-47.17, 30.98, -18.40).
+Placed Cl- in complex at (45.52, 27.18, 38.33).
+0: Placed Na+ in complex at (-69.15, 44.56, -1.34).
+Placed Cl- in complex at (-42.38, -5.94, -42.55).
+0: Placed Na+ in complex at (40.53, 52.97, -1.52).
+Placed Cl- in complex at (7.50, -17.55, -47.50).
+0: Placed Na+ in complex at (69.78, -10.57, 28.74).
+Placed Cl- in complex at (66.75, -36.44, 29.20).
+0: Placed Na+ in complex at (-16.99, -35.20, -28.08).
+Placed Cl- in complex at (15.53, 56.78, -1.53).
+0: Placed Na+ in complex at (-13.08, -66.36, -16.84).
+Placed Cl- in complex at (-53.98, 58.06, 42.68).
+0: Placed Na+ in complex at (0.74, 30.61, -0.78).
+Placed Cl- in complex at (15.05, 8.06, -56.89).
+0: Placed Na+ in complex at (-46.54, -13.97, -38.61).
+Placed Cl- in complex at (-6.74, -34.65, 51.69).
+0: Placed Na+ in complex at (-11.80, 45.70, -1.44).
+Placed Cl- in complex at (-6.01, -72.69, 5.01).
+0: Placed Na+ in complex at (42.85, 16.41, -8.44).
+Placed Cl- in complex at (-4.06, -15.36, -76.10).
+0: Placed Na+ in complex at (54.58, 1.37, 37.46).
+Placed Cl- in complex at (-74.21, -20.00, 3.63).
+0: Placed Na+ in complex at (-27.05, -81.54, -2.98).
+Placed Cl- in complex at (3.48, 42.95, 20.25).
+0: Placed Na+ in complex at (-35.32, 41.41, -20.15).
+Placed Cl- in complex at (24.09, 2.97, -78.33).
+0: Placed Na+ in complex at (-11.96, 52.81, -50.26).
+Placed Cl- in complex at (-62.65, -6.76, 9.59).
+0: Placed Na+ in complex at (43.31, 21.96, -49.31).
+Placed Cl- in complex at (73.30, 37.18, 33.59).
+0: Placed Na+ in complex at (21.48, 21.59, -29.02).
+Placed Cl- in complex at (-44.02, -67.74, 5.90).
+0: Placed Na+ in complex at (-39.98, -37.83, -40.76).
+Placed Cl- in complex at (35.90, -45.50, -54.04).
+0: Placed Na+ in complex at (38.10, -62.60, -37.72).
+Placed Cl- in complex at (-2.66, -42.94, -36.33).
+0: Placed Na+ in complex at (55.91, -28.77, 15.92).
+Placed Cl- in complex at (-13.37, 54.40, 39.03).
+0: Placed Na+ in complex at (9.88, 7.38, 64.93).
+Placed Cl- in complex at (40.84, -36.87, -52.90).
+0: Placed Na+ in complex at (-55.16, 30.38, -54.55).
+Placed Cl- in complex at (-56.72, -13.88, -13.08).
+0: Placed Na+ in complex at (-55.66, 13.56, -3.19).
+Placed Cl- in complex at (28.40, 32.79, 7.31).
+0: Placed Na+ in complex at (-7.42, -44.24, -12.99).
+Placed Cl- in complex at (-50.91, -52.34, -22.20).
+0: Placed Na+ in complex at (-55.67, 3.22, -26.44).
+Placed Cl- in complex at (-5.03, 4.14, -33.38).
+0: Placed Na+ in complex at (-67.56, -7.74, -38.47).
+Placed Cl- in complex at (-68.89, -24.09, 2.86).
+0: Placed Na+ in complex at (27.06, -39.47, 48.03).
+Placed Cl- in complex at (-26.91, -37.29, 47.07).
+0: Placed Na+ in complex at (59.66, 18.10, -16.26).
+Placed Cl- in complex at (72.69, -6.31, 27.77).
+0: Placed Na+ in complex at (-73.79, -14.95, 46.49).
+Placed Cl- in complex at (27.85, -64.00, 29.08).
+0: Placed Na+ in complex at (42.21, -26.92, 25.06).
+Placed Cl- in complex at (19.44, 25.62, -16.84).
+0: Placed Na+ in complex at (35.82, 6.47, -45.03).
+Placed Cl- in complex at (38.11, -1.35, -40.76).
+0: Placed Na+ in complex at (-53.77, -64.69, -22.87).
+Placed Cl- in complex at (48.88, -55.69, -14.05).
+0: Placed Na+ in complex at (-37.58, -76.88, 9.99).
+Placed Cl- in complex at (46.83, 58.28, -6.30).
+0: Placed Na+ in complex at (-68.73, 7.11, 4.41).
+Placed Cl- in complex at (68.16, -47.62, -16.80).
+0: Placed Na+ in complex at (-20.29, -51.10, -24.16).
+Placed Cl- in complex at (3.12, 21.36, -30.07).
+0: Placed Na+ in complex at (54.93, -30.71, 52.32).
+Placed Cl- in complex at (64.16, 34.23, -23.37).
+0: Placed Na+ in complex at (-36.64, -59.18, 7.31).
+Placed Cl- in complex at (-22.83, 42.06, -41.32).
+0: Placed Na+ in complex at (5.34, 40.52, -59.57).
+Placed Cl- in complex at (33.44, -30.55, 43.36).
+0: Placed Na+ in complex at (-23.07, 7.71, -44.50).
+Placed Cl- in complex at (-57.18, 6.80, -21.36).
+0: Placed Na+ in complex at (-23.90, -57.02, 42.31).
+Placed Cl- in complex at (-3.28, 29.75, 6.45).
+0: Placed Na+ in complex at (23.39, -28.77, 42.47).
+Placed Cl- in complex at (69.48, 26.22, -19.66).
+0: Placed Na+ in complex at (5.81, -3.52, 33.00).
+Placed Cl- in complex at (13.74, -15.48, -50.31).
+0: Placed Na+ in complex at (21.53, -53.61, -57.05).
+Placed Cl- in complex at (-21.30, 55.02, -28.92).
+0: Placed Na+ in complex at (46.64, 39.64, -48.75).
+Placed Cl- in complex at (66.43, -20.44, -50.71).
+0: Placed Na+ in complex at (-6.88, 60.02, 25.57).
+Placed Cl- in complex at (47.12, 19.63, 55.15).
+0: Placed Na+ in complex at (-34.22, -38.89, -1.74).
+Placed Cl- in complex at (-41.19, -72.46, -28.05).
+0: Placed Na+ in complex at (-2.47, 13.67, -63.76).
+Placed Cl- in complex at (-69.79, 18.50, 48.49).
+0: Placed Na+ in complex at (7.85, -39.19, -47.91).
+Placed Cl- in complex at (38.29, -22.43, 32.91).
+0: Placed Na+ in complex at (-44.05, -60.03, 23.82).
+Placed Cl- in complex at (-0.91, 5.97, -58.97).
+0: Placed Na+ in complex at (73.03, -43.34, -33.82).
+Placed Cl- in complex at (-12.50, 72.15, 22.71).
+0: Placed Na+ in complex at (41.96, -15.28, -57.78).
+Placed Cl- in complex at (-30.53, 40.21, 60.23).
+0: Placed Na+ in complex at (17.98, -59.29, -21.96).
+Placed Cl- in complex at (-39.87, -16.93, 58.58).
+0: Placed Na+ in complex at (61.48, -50.15, -10.09).
+Placed Cl- in complex at (13.74, 22.25, 17.86).
+0: Placed Na+ in complex at (20.07, 33.18, 37.00).
+Placed Cl- in complex at (42.64, -50.61, -26.16).
+0: Placed Na+ in complex at (35.53, 7.91, 48.20).
+Placed Cl- in complex at (-9.69, -34.80, -61.33).
+0: Placed Na+ in complex at (26.57, -53.64, 36.35).
+Placed Cl- in complex at (8.31, -38.40, 41.18).
+0: Placed Na+ in complex at (-67.56, -29.21, 13.47).
+Placed Cl- in complex at (57.52, -13.25, 13.94).
+0: Placed Na+ in complex at (-34.74, -49.35, 29.03).
+Placed Cl- in complex at (22.27, 10.60, -5.10).
+0: Placed Na+ in complex at (-30.35, 11.85, -41.32).
+Placed Cl- in complex at (-13.41, 29.52, 20.31).
+0: Placed Na+ in complex at (22.83, 11.19, -8.23).
+Placed Cl- in complex at (-27.08, 24.64, -29.58).
+0: Placed Na+ in complex at (-72.92, -16.76, -25.22).
+Placed Cl- in complex at (-60.19, 4.99, -8.93).
+0: Placed Na+ in complex at (20.78, 24.52, -61.70).
+Placed Cl- in complex at (-27.11, -14.24, 19.47).
+0: Placed Na+ in complex at (-46.19, -0.68, 38.30).
+Placed Cl- in complex at (-56.72, -6.91, -14.07).
+0: Placed Na+ in complex at (32.90, 39.70, -2.37).
+Placed Cl- in complex at (20.78, -21.46, -61.70).
+0: Placed Na+ in complex at (-47.64, -17.60, -47.24).
+Placed Cl- in complex at (13.80, -32.09, -51.77).
+0: Placed Na+ in complex at (48.77, 47.07, -7.08).
+Placed Cl- in complex at (2.21, -66.50, -42.96).
+0: Placed Na+ in complex at (-38.52, 12.65, 4.34).
+Placed Cl- in complex at (3.49, 67.39, 18.75).
+0: Placed Na+ in complex at (21.73, 6.20, 60.61).
+Placed Cl- in complex at (31.05, 56.88, 39.94).
+0: Placed Na+ in complex at (-59.62, 8.75, 59.29).
+Placed Cl- in complex at (-48.76, -6.02, -3.03).
+0: Placed Na+ in complex at (28.82, 25.02, 17.86).
+Placed Cl- in complex at (22.71, -15.96, 51.36).
+0: Placed Na+ in complex at (-67.04, 33.80, -4.55).
+Placed Cl- in complex at (-47.17, 53.97, -5.13).
+0: Placed Na+ in complex at (-4.02, -39.52, 63.27).
+Placed Cl- in complex at (-36.05, 48.65, -3.55).
+0: Placed Na+ in complex at (26.10, 70.14, -23.85).
+Placed Cl- in complex at (73.76, -29.75, 1.93).
+0: Placed Na+ in complex at (12.69, -9.97, -43.68).
+Placed Cl- in complex at (-0.20, -48.95, -16.59).
+0: Placed Na+ in complex at (-2.97, -79.00, -28.12).
+Placed Cl- in complex at (30.91, 2.52, 63.55).
+0: Placed Na+ in complex at (-16.57, 71.61, -23.02).
+Placed Cl- in complex at (-52.22, -36.12, 46.56).
+0: Placed Na+ in complex at (-51.78, -35.35, 41.15).
+Placed Cl- in complex at (-14.69, 6.57, -23.69).
+0: Placed Na+ in complex at (63.64, -7.62, 61.70).
+Placed Cl- in complex at (3.96, 6.36, 65.39).
+0: Placed Na+ in complex at (3.21, 68.25, -26.17).
+Placed Cl- in complex at (-47.17, 30.98, 34.70).
+0: Placed Na+ in complex at (31.56, 61.03, -27.99).
+Placed Cl- in complex at (55.89, -25.77, -32.53).
+0: Placed Na+ in complex at (-28.10, 56.59, -0.12).
+Placed Cl- in complex at (11.26, -64.69, -22.87).
+0: Placed Na+ in complex at (-30.38, -77.98, -12.73).
+Placed Cl- in complex at (-29.14, 46.48, -0.94).
+0: Placed Na+ in complex at (-61.76, -27.64, -22.69).
+Placed Cl- in complex at (45.35, -36.43, -19.43).
+0: Placed Na+ in complex at (-60.99, 14.98, 11.98).
+Placed Cl- in complex at (-52.22, -36.12, -6.54).
+0: Placed Na+ in complex at (-25.55, -0.82, -11.90).
+Placed Cl- in complex at (-47.40, -6.20, 36.05).
+0: Placed Na+ in complex at (35.34, 6.31, 30.45).
+Placed Cl- in complex at (-38.61, -48.89, 15.46).
+0: Placed Na+ in complex at (42.24, -54.50, -23.71).
+Placed Cl- in complex at (10.12, -4.63, -79.26).
+0: Placed Na+ in complex at (-36.48, -67.93, 31.41).
+Placed Cl- in complex at (-51.78, 49.49, -43.67).
+0: Placed Na+ in complex at (-28.10, 16.48, 69.08).
+Placed Cl- in complex at (-45.60, -20.37, -16.84).
+0: Placed Na+ in complex at (34.50, -59.09, -41.00).
+Placed Cl- in complex at (50.34, -16.42, -36.97).
+0: Placed Na+ in complex at (-13.69, 63.97, -33.82).
+Placed Cl- in complex at (-47.06, 44.58, 49.03).
+0: Placed Na+ in complex at (-33.64, 45.14, 42.67).
+Placed Cl- in complex at (-19.41, -58.72, -17.12).
+0: Placed Na+ in complex at (-26.22, -57.18, -26.98).
+Placed Cl- in complex at (-2.80, -73.56, -6.87).
+0: Placed Na+ in complex at (-9.91, 46.10, -9.74).
+Placed Cl- in complex at (-40.24, 6.03, -56.62).
+0: Placed Na+ in complex at (27.45, 31.22, 19.63).
+Placed Cl- in complex at (-27.40, 30.53, -78.37).
+0: Placed Na+ in complex at (-35.35, 37.64, -28.07).
+Placed Cl- in complex at (-28.08, 3.23, -6.38).
+0: Placed Na+ in complex at (19.67, -4.53, -44.38).
+Placed Cl- in complex at (34.50, -13.11, 12.10).
+0: Placed Na+ in complex at (-27.40, 30.53, 80.94).
+Placed Cl- in complex at (-33.67, 3.73, -1.49).
+0: Placed Na+ in complex at (-37.75, 39.35, -59.13).
+Placed Cl- in complex at (-55.67, -42.76, 26.67).
+0: Placed Na+ in complex at (-29.79, -68.02, -4.07).
+Placed Cl- in complex at (25.06, 31.15, -54.04).
+0: Placed Na+ in complex at (-18.72, -9.09, 67.71).
+Placed Cl- in complex at (-20.22, -25.57, -65.76).
+0: Placed Na+ in complex at (-50.91, 16.65, -8.92).
+Placed Cl- in complex at (27.07, 55.23, 14.47).
+0: Placed Na+ in complex at (65.24, -0.68, -50.24).
+Placed Cl- in complex at (23.14, -56.22, 66.99).
+0: Placed Na+ in complex at (-2.35, 40.71, 20.25).
+Placed Cl- in complex at (8.81, -58.37, -25.82).
+0: Placed Na+ in complex at (-30.25, 40.92, 49.26).
+Placed Cl- in complex at (23.66, 40.54, -1.17).
+0: Placed Na+ in complex at (-38.23, -7.79, 41.11).
+Placed Cl- in complex at (-3.85, -24.09, -50.25).
+0: Placed Na+ in complex at (15.35, 66.47, 5.78).
+Placed Cl- in complex at (37.91, -44.41, 27.74).
+0: Placed Na+ in complex at (-16.30, 60.17, 8.20).
+Placed Cl- in complex at (29.24, -39.23, -59.93).
+0: Placed Na+ in complex at (-71.13, 43.09, -37.64).
+Placed Cl- in complex at (-23.34, 10.83, -83.50).
+0: Placed Na+ in complex at (-0.31, -25.92, 17.81).
+Placed Cl- in complex at (-15.91, 61.88, -60.02).
+0: Placed Na+ in complex at (1.39, 2.55, 68.77).
+Placed Cl- in complex at (28.48, -36.85, -17.05).
+0: Placed Na+ in complex at (35.94, -5.91, -79.37).
+Placed Cl- in complex at (9.95, -36.79, 44.51).
+0: Placed Na+ in complex at (-19.69, -82.42, -19.43).
+Placed Cl- in complex at (-21.47, -77.33, 2.86).
+0: Placed Na+ in complex at (-29.51, 30.90, -18.18).
+Placed Cl- in complex at (-46.31, 35.13, 3.41).
+0: Placed Na+ in complex at (8.72, -29.75, 28.48).
+Placed Cl- in complex at (40.02, -40.54, -7.67).
+0: Placed Na+ in complex at (3.28, -4.65, 70.23).
+Placed Cl- in complex at (50.87, -29.13, -14.42).
+0: Placed Na+ in complex at (-35.35, -8.35, 25.03).
+Placed Cl- in complex at (45.29, -39.52, 5.68).
+0: Placed Na+ in complex at (-69.71, -47.41, -30.82).
+Placed Cl- in complex at (-42.34, -11.96, -24.31).
+0: Placed Na+ in complex at (28.40, -1.05, -67.33).
+Placed Cl- in complex at (-24.15, -62.98, 42.44).
+0: Placed Na+ in complex at (-40.04, 32.74, 40.49).
+Placed Cl- in complex at (0.05, 21.53, -45.59).
+0: Placed Na+ in complex at (-15.59, -65.81, -17.89).
+Placed Cl- in complex at (-40.24, 6.03, -30.07).
+0: Placed Na+ in complex at (0.93, 61.43, 16.81).
+Placed Cl- in complex at (69.46, 33.59, 39.71).
+0: Placed Na+ in complex at (28.82, -32.07, -57.17).
+Placed Cl- in complex at (-69.08, -13.86, -3.77).
+0: Placed Na+ in complex at (51.85, 48.38, 33.52).
+Placed Cl- in complex at (-23.34, 56.82, 49.26).
+0: Placed Na+ in complex at (-18.34, 19.25, -0.95).
+Placed Cl- in complex at (-27.83, -50.53, -28.08).
+0: Placed Na+ in complex at (51.01, -13.97, 67.59).
+Placed Cl- in complex at (2.21, 25.47, -69.51).
+0: Placed Na+ in complex at (-11.87, 10.82, -44.62).
+Placed Cl- in complex at (-69.08, -36.85, -17.05).
+0: Placed Na+ in complex at (4.52, -4.26, 30.78).
+Placed Cl- in complex at (27.97, -49.51, 39.40).
+0: Placed Na+ in complex at (62.19, -12.68, 19.28).
+Placed Cl- in complex at (61.85, 47.34, 14.49).
+0: Placed Na+ in complex at (66.94, -18.01, -29.78).
+Placed Cl- in complex at (-18.34, 42.24, -14.22).
+0: Placed Na+ in complex at (6.73, 14.28, -14.23).
+Placed Cl- in complex at (-5.40, -13.68, -42.85).
+0: Placed Na+ in complex at (11.58, 68.93, 39.05).
+Placed Cl- in complex at (-14.12, -77.55, 6.45).
+0: Placed Na+ in complex at (53.48, 7.96, 48.59).
+Placed Cl- in complex at (-23.23, -21.62, 56.97).
+0: Placed Na+ in complex at (14.12, 10.68, -35.97).
+Placed Cl- in complex at (-15.59, 49.16, -57.71).
+0: Placed Na+ in complex at (-67.56, -20.35, -5.47).
+Placed Cl- in complex at (55.22, -38.96, -15.01).
+0: Placed Na+ in complex at (-39.87, -16.93, -47.63).
+Placed Cl- in complex at (30.61, -38.73, 39.88).
+0: Placed Na+ in complex at (-41.19, -49.46, -14.77).
+Placed Cl- in complex at (-47.05, -8.22, 4.41).
+0: Placed Na+ in complex at (58.72, 33.36, 4.80).
+Placed Cl- in complex at (-10.46, -44.62, -42.20).
+0: Placed Na+ in complex at (-41.03, 19.14, -46.91).
+Placed Cl- in complex at (-16.29, 39.91, -12.09).
+0: Placed Na+ in complex at (37.05, 25.70, -8.48).
+Placed Cl- in complex at (52.67, -55.32, -18.69).
+0: Placed Na+ in complex at (9.95, 9.19, -61.70).
+Placed Cl- in complex at (-31.50, -65.61, -11.03).
+0: Placed Na+ in complex at (-6.00, -56.33, -35.48).
+Placed Cl- in complex at (-4.54, 19.47, -80.08).
+0: Placed Na+ in complex at (-4.48, -33.47, 27.35).
+Placed Cl- in complex at (52.08, -37.41, -37.89).
+0: Placed Na+ in complex at (26.57, 15.34, -30.02).
+Placed Cl- in complex at (2.54, 24.16, -37.64).
+0: Placed Na+ in complex at (-0.15, -15.29, 35.88).
+Placed Cl- in complex at (47.12, 19.63, 2.05).
+0: Placed Na+ in complex at (-38.18, 10.18, -50.39).
+Placed Cl- in complex at (-36.48, -21.94, 4.86).
+0: Placed Na+ in complex at (-25.00, -21.46, -27.69).
+Placed Cl- in complex at (-49.66, -40.37, -31.67).
+0: Placed Na+ in complex at (41.12, 56.28, 9.71).
+Placed Cl- in complex at (30.40, 69.89, -11.34).
+0: Placed Na+ in complex at (-11.72, -32.16, 40.83).
+Placed Cl- in complex at (-7.56, 26.01, 17.13).
+0: Placed Na+ in complex at (4.23, 31.64, -11.61).
+Placed Cl- in complex at (-22.59, -70.68, 20.68).
+0: Placed Na+ in complex at (65.96, 15.44, 43.36).
+Placed Cl- in complex at (-49.83, 48.67, -2.01).
+0: Placed Na+ in complex at (-73.34, 8.83, -11.09).
+Placed Cl- in complex at (7.14, -16.74, 22.48).
+0: Placed Na+ in complex at (-59.93, -12.70, -36.30).
+Placed Cl- in complex at (-42.21, 34.18, 5.05).
+Placed Cl- in complex at (22.10, -26.37, 70.06).
+Placed Cl- in complex at (48.05, -12.20, -41.35).
+Placed Cl- in complex at (-2.03, 64.26, 53.83).
+Placed Cl- in complex at (-28.56, -16.63, -27.53).
+Placed Cl- in complex at (-8.86, 17.55, -41.00).
+Placed Cl- in complex at (2.90, -62.06, 31.14).
+Placed Cl- in complex at (-16.24, 16.97, -42.85).
+Placed Cl- in complex at (30.04, -32.32, 15.89).
+Placed Cl- in complex at (-55.31, -16.31, 56.61).
+Placed Cl- in complex at (-22.96, 42.63, -34.02).
+Placed Cl- in complex at (-39.88, 50.61, -19.57).
+> 
+> # Save everything
+> 
+> savepdb complex rbd_s2h97.pdb
+Writing pdb file: rbd_s2h97.pdb
+   printing CRYST1 record to PDB file with box info
+
+/home/zhangi/miniconda3/envs/perses-rbd-ace2/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NGLN -> GLN
+
+/home/zhangi/miniconda3/envs/perses-rbd-ace2/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NSER -> SER
+> 
+> saveamberparm complex rbd_s2h97.prmtop rbd_s2h97.inpcrd #  Save AMBER topology and coordinate files
+Checking Unit.
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 2025 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	NGLN	1
+	NSER	1
+	WAT	77079
+  )
+ (no restraints)
+> 
+> quit #  Quit tleap program
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 2; Notes = 0.
