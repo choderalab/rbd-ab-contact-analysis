@@ -60,6 +60,7 @@ This produced fully solvated (with ions) systems. Check the `[system_name]/leap.
 ## Equilibration
 
 Once prepared the system was equilibrated here: `./equil`. Each system was equilibrated 5x (in subdirs `0`-`4`)
+
 The equilibrated PDBs were renumbered such that chains and residue ids are numbered according to the original PDB structures using `.equil/*/correct_equilibrated*.py`
 To render the equilibrated PDB properly in pymol, it must be read into `MDAnalysis` and written out: 
 ```python
